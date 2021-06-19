@@ -1,6 +1,6 @@
 streamlit==0.64.0
 Flask==1.1.2
-tensorflow==2.2.0
+tensorflow-cpu==2.3.0
 numpy==1.18.4
 matplotlib==3.2.1
 requests==2.24.0
