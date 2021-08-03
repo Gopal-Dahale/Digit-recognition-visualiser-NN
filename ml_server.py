@@ -1,10 +1,7 @@
-
 # creating a basic flask server
-
 import json
 import tensorflow as tf
 import numpy as np
-import random
 
 from flask import Flask, request
 
@@ -30,7 +27,6 @@ def get_prediction():
 
 
 @app.route('/', methods = ['GET','POST'])
-
 def index():
     if request.method == 'POST':
         preds, image = get_prediction()
