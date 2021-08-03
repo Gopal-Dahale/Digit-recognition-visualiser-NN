@@ -1,19 +1,16 @@
 # For deployment
 
 import streamlit as st
-import json
-import requests
 import matplotlib.pyplot as plt
 import numpy as np
 
 # use streamlit run app.py to run the app
 
 # creating a basic flask server
-import json
 import tensorflow as tf
 import numpy as np
 
-from flask import Flask, request
+from flask import Flask
 
 app = Flask(__name__)
 
@@ -50,8 +47,6 @@ def main():
 
     if st.button('Get random prediction'):
         response = predict()
-        # response = requests.post(URI, data={})
-        # response = json.loads(response.text)
         preds = response.get('prediction')
         image = response.get('image')
         image = np.reshape(image,(28,28))
